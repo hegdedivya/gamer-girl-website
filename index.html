@@ -1,0 +1,282 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Gamer girl2020</title>
+  </head>
+
+  <body class="confont">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"
+          ><img
+            src="https://www.xxlmag.com/files/2017/09/nicki-minaj1.jpg?w=630&h=420&zc=1&s=0&a=t&q=89"
+            height="30"
+            width="41"
+        /></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><span class="fa fa-home fa-lg"></span> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html"
+                ><span class="fa fa-info fa-lg"></span> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">
+                <span class="fa fa-list fa-lg"></span> Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html"
+                ><span class="fa fa-address-card fa-lg"></span> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="jumbotron">
+      <div class="container" style="padding-top: 30px">
+        <div class="row row-header">
+          <div class="col-12 col-sm-6">
+            <h1>Gamer Girl</h1>
+            <p>
+              We take inspiration from the World's best challenges, and create a
+              unique fusion experience.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://tse1.mm.bing.net/th?id=OIP.t9R-5PY8mmC6wWyENzYKswHaEK&pid=Api&P=0&w=305&h=172"
+              height="150"
+              width="250"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-1">
+      <h1>Your Age in Days</h1>
+      <div class="flex-box-container-1">
+        <div class="container col-12">
+          <button class="btn btn-success" onclick="ageDays()">Click me</button>
+        </div>
+
+        <div class="container col-12">
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="col-12">
+        <h3>Rat Generator</h3>
+        <button class="btn btn-success" id="gencat" onclick="generateCat()">
+          Generate Rat
+        </button>
+      </div>
+      <div class="flex-box-container-2" id="catgenflex"></div>
+    </div>
+
+    <div class="container-3">
+      <h3>Rock Paper Scissors</h3>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          id="rock"
+          src="https://tse3.mm.bing.net/th?id=OIP.2fNoS3WdNddaVUqtYfWf6gHaIN&pid=Api&P=0&w=300&h=300"
+          height="150px"
+          width="150px"
+          onclick="rpsGame(this)"
+          alt="rock"
+        />
+        <img
+          id="paper"
+          src="https://tse3.mm.bing.net/th?id=OIP.-z_vPp8XjIZeihjotP66BAHaJb&pid=Api&P=0&w=300&h=300"
+          height="150px"
+          width="150px"
+          onclick="rpsGame(this)"
+          alt="paper"
+        />
+        <img
+          id="scissors"
+          src="https://images.homedepot-static.com/productImages/ecead231-2132-4bb0-9e59-0ffd907b7fd8/svn/wiss-scissors-w22w-64_1000.jpg"
+          height="150px"
+          width="150px"
+          onclick="rpsGame(this)"
+          alt="scissors"
+        />
+      </div>
+    </div>
+
+    <div class="container-3">
+      <h3>Change The Button Colors</h3>
+      <div class="flex-box-pick-color" id="color-change">
+        <form action="">
+          <select
+            name="backdrop"
+            id="background"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+        <button class="btn btn-primary">Zoom</button>
+        <button class="btn btn-danger">Zoom</button>
+        <button class="btn btn-warning">Zoom</button>
+        <button class="btn btn-success">Zoom</button>
+      </div>
+    </div>
+
+    <div class="container-5">
+      <h2>Blackjack</h2>
+      <h3><span id="blackjack-result">Let's play!</span></h3>
+
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">
+            Hit
+          </button>
+          <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">
+            Stand
+          </button>
+          <button class="btn-lg btn-danger" id="blackjack-deal-button">
+            Deal
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-1 col-sm-2">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="./aboutus.html">About</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="./contactus.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-7 col-sm-5">
+            <h5>Our Address</h5>
+            <address>
+              121, Clear Water Bay Road<br />
+              Clear Water Bay, Kowloon<br />
+              NIMS ISLAND<br />
+              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
+              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
+              <i class="fa fa-envelope fa-lg"></i>:
+              <a href="mailto:contact@gamergirl.com">contact@gamergirl.com</a>
+            </address>
+          </div>
+          <div class="col-12 col-sm-4 align-self-center">
+            <div class="text-center">
+              <a
+                class="btn btn-social-icon btn-google"
+                href="http://google.com/+"
+                ><i class="fa fa-google-plus fa-lg"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id="
+                ><i class="fa fa-facebook fa-lg"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/in/"
+                ><i class="fa fa-linkedin fa-lg"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+                ><i class="fa fa-twitter fa-lg"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-google"
+                href="http://youtube.com/"
+                ><i class="fa fa-youtube fa-lg"></i
+              ></a>
+              <a class="btn btn-social-icon" href="mailto:"
+                ><i class="fa fa-envelope-o fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>© Copyright 2020 Gamer Girl Pvt. Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://pagecdn.io/lib/popper/2.4.4/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+  </body>
+
+  <script src="static/js/script.js"></script>
+</html>
