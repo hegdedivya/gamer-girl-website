@@ -1,18 +1,18 @@
 # gamer-girl-website
 
-Introduction
+##Introduction
 
-This is a parody gaming website where you can play games?!
+This is a *parody* gaming website where you can play games?!
 
-Code
+##Code
 
 Mostly used javascript to code the games.
 
 Used some bootstrap and css to style the website and make it responsive.
 
-For live demo, hosted it on firebase.
+For live demo, click here(https://gamergirl-a4c68.firebaseapp.com/). *Hosted it on firebase.*
 
-About
+##About
 
 This website has 4 pages: Home, Menu, About and Contact.
 
