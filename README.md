@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a *parody* gaming website where you can play games?! Simple games like calculating age in days, rock paper scissors, rat generator, changing button colors, blackjack can be found.
+This is a *parody* gaming website where you can play games. Simple games like calculating age in days, rock paper scissors, rat generator, changing button colors, blackjack can be found.
 
 ## Code
 
